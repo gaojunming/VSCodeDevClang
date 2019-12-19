@@ -1,0 +1,17 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {//本文件中按下Ctrl + Shift + B执行任务
+            "label": "build hello",
+            "type": "shell",
+            "command": "g++",
+            "args": ["-g", "-o", "hello", "hello.c"],//这里写死了构建目标，不同的目标记得修改
+            "group": {
+              "kind": "build",
+              "isDefault": true
+            }
+          }
+    ]
+}
